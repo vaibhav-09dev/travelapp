@@ -2,10 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import pic1 from "../../../public/pic1.jpg";
-import Wedding2 from "@/components/Wedding2";
-import Wedding3 from "@/components/Wedding3";
+import dynamic from "next/dynamic";
 
-const page = () => {
+// Dynamically import Wedding2 and Wedding3
+const Wedding2 = dynamic(() => import("@/components/Wedding2"), { ssr: false });
+const Wedding3 = dynamic(() => import("@/components/Wedding3"), { ssr: false });
+const Page = () => {
   return (
     <div>
       {/* Hero Section */}
@@ -72,4 +74,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

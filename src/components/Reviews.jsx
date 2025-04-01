@@ -14,32 +14,25 @@ const Reviews = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/Allreview");
+      const response = await axios.get(`${API_BASE_URL}/api/Allreview`);
       setAllReviews(response.data.alluser || []);
     } catch (error) {
-      console.error("Error fetching reviews:", error);
+      console.error("Error fetching reviews:", error.message);
+      alert("Failed to fetch reviews. Please try again later.");
     }
   };
 
-  useEffect(() => {
-    fetchReviews();
-  }, []);
-
   const click = async (e) => {
     e.preventDefault();
-
     try {
-      await axios.post("http://localhost:3000/api/Reviewdata", review).then((res) => {
-        alert("Request sent");
-        setreview({
-          name: "",
-          review: "",
-        });
-        fetchReviews(); // Refresh reviews after submission
+      await axios.post(`${API_BASE_URL}/api/Reviewdata`, review).then((res) => {
+        alert("Request sent successfully!");
+        setreview({ name: "", review: "" });
+        fetchReviews();
       });
     } catch (error) {
-      console.log("Error in sending:", error);
-      alert(error.response?.data?.message || "Failed to send the request. Please try again.");
+      console.error("Error in sending review:", error.message);
+      alert(error.response?.data?.message || "Failed to send the review. Please try again.");
     }
   };
 
@@ -56,8 +49,7 @@ const Reviews = () => {
           placeholder="Enter Name"
           value={review.name}
           onChange={(e) => setreview({ ...review, name: e.target.value })}
-          className="border-gray-700 text-gray-700 h-[40px] rounded-md border bg-transparent w-full md:w-[90%] text-left text-lg md:text-xl mt-5 p-2"
-        />
+          className="border-gray-700 text-gray-700 h-[40px] rounded-md border bg-transparent w-full md:w-[90%] text-left text-lg md:text-xl mt-5 p-2"/>
         <br />
         <textarea
           type="review"
