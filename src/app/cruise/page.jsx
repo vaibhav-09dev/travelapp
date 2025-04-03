@@ -135,7 +135,7 @@ const page = () => {
       Our Association
     </h2>
     <p className="text-lg md:text-xl text-muted leading-relaxed max-w-3xl mx-auto mb-12">
-      Trips Exotica is a paradigm of convenient and secured travel for all. It
+     wellcome Tours is a paradigm of convenient and secured travel for all. It
       is your one-stop destination to find the best and exotic domestic or
       international travel deals. We offer travel-related services such as
       expedient booking facilities across flights, hotel accommodations, and

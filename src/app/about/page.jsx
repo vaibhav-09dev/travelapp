@@ -48,6 +48,8 @@ const Page = () => {
         <h1 className="text-lg text-center font-bold font-serif mt-4 text-primary">
           ANKUR KALRA <br />
           <span className="text-muted">TRAVEL CONSULTANT</span>
+          <span className="text-muted">SINCE 2009 WITH 11YEARS OF EXPERIENCE IN HOSPITALITY INDUSTRY
+          </span>
         </h1>
       </div>
       {/* Text Section */}
