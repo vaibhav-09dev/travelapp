@@ -58,7 +58,7 @@ const Reviews = () => {
         />
         <button
           onClick={click}
-          className="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-secondary font-medium rounded-lg text-lg px-6 py-3 text-center mt-6 w-full md:w-auto shadow-lg transition-all duration-300"
+          className="text-black bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-secondary font-medium rounded-lg text-lg px-6 py-3 text-center mt-6 w-full md:w-auto shadow-lg transition-all duration-300"
         >
           Submit Review
         </button>
