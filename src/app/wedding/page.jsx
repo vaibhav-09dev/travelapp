@@ -78,10 +78,10 @@ const Page = () => {
         <h2 className="text-3xl md:text-5xl font-bold underline font-serif text-primary text-center mb-12">
           Explore Our Wedding Packages
         </h2>
-        <div className="md:h-[500] h-[570] pb-16">
+        <div className="md:h-[500] h-[570] pb-8">
           <Wedding2 />
         </div>
-        <div className="mt-12 pt-16">
+        <div className="mt-12 pt-4">
           <Wedding3 />
         </div>
       </div>
