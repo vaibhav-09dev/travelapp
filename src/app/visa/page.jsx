@@ -60,7 +60,7 @@ const page = () => {
           {/* Video Section */}
           <div className="w-full md:w-1/2 mt-8 md:mt-0 px-4">
             <video
-              src="https://media.istockphoto.com/id/2118632455/video/panoramic-view-from-the-heights-of-new-york-city-view-through-the-window-of-the-airplane.mp4?s=mp4-480x480-is&k=20&c=MJvCj6VCQlBztkMVj4sgFsVwJZVuj3e4NgE6hRQPxIk="
+              src="https://cdn.pixabay.com/video/2019/12/04/29804-377520739_tiny.mp4"
               autoPlay
               loop
               muted

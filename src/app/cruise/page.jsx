@@ -2,7 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import cruise from "../../../public/cruise.jpg";
+import cruise from "../../../public/cruise.webp";
+import a1 from "../../../public/a1.jpg";
+import a2 from "../../../public/a2.png";
+import a3 from "../../../public/a3.jpg";
+import a4 from "../../../public/a4.jpg";
+import a5 from "../../../public/a5.jpg";
 
 const page = () => {
   return (
@@ -84,7 +89,7 @@ const page = () => {
       <div className="bg-white py-8 px-4 md:px-12 flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/2 flex justify-center">
           <video
-            src="https://cdn.pixabay.com/video/2016/07/05/3713-173505175_tiny.mp4"
+            src="https://cdn.pixabay.com/video/2020/10/12/52185-478214404_tiny.mp4"
             autoPlay
             loop
             muted
@@ -121,6 +126,79 @@ const page = () => {
           </div>
         </div>
       </div>
+      
+      <section className="py-16 px-4">
+          
+  <div className="container mx-auto text-center">
+  
+    <h2 className="text-3xl md:text-5xl font-bold font-serif text-primary mb-6">
+      Our Association
+    </h2>
+    <p className="text-lg md:text-xl text-muted leading-relaxed max-w-3xl mx-auto mb-12">
+      Trips Exotica is a paradigm of convenient and secured travel for all. It
+      is your one-stop destination to find the best and exotic domestic or
+      international travel deals. We offer travel-related services such as
+      expedient booking facilities across flights, hotel accommodations, and
+      much more, along with specialized tours through a single, easy, and safe
+      interface.
+    </p>
+
+    <div className="flex flex-wrap justify-center gap-8">
+      
+        <div
+         
+          className="w-50 h-40 flex items-center justify-center bg-white shadow-lg rounded-lg p-4"
+        >
+          <Image
+            src={a1}
+            alt={`Partner `}
+            width={120}
+            height={80}
+            className="max-w-full max-h-full"
+          />
+        </div>
+        <div
+         
+         className="w-50 h-40 flex items-center justify-center bg-white shadow-lg rounded-lg p-4"
+       >
+         <Image
+           src={a2}
+           alt={`Partner `}
+           width={120}
+           height={80}
+           className="max-w-full max-h-full"
+         />
+       </div>
+       <div
+         
+         className="w-50 h-40 flex items-center justify-center bg-white shadow-lg rounded-lg p-4"
+       >
+         <Image
+           src={a3}
+           alt={`Partner `}
+           width={120}
+           height={80}
+           className="max-w-full max-h-full"
+         />
+       </div>
+       <div
+         
+         className="w-50 h-40 flex items-center justify-center bg-white shadow-lg rounded-lg p-4"
+       >
+         <Image
+           src={a4}
+           alt={`Partner `}
+           width={120}
+           height={80}
+           className="max-w-full max-h-full"
+         />
+       </div>
+      
+      </div>
+    </div>
+  
+ 
+</section>
     </div>
   );
 };

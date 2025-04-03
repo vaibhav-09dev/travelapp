@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,51 +12,51 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow-md fixed top-0 left-0 w-[400] md:w-full z-50">
-      <div className="flex justify-between items-center h-[80px] px-4 md:px-8">
+    <div className=" md:opacity-100 shadow-2xl fixed top-0 left-0 w-full z-50">
+      <div className="flex md:justify-between justify-around items-center h-[80px] px-4 md:px-8">
         {/* Logo Section */}
         <div className="h-[80px] w-[200px] flex justify-center items-center">
           <Image
             src={logo}
-            width={90}
+            width={80}
             alt="logo"
-            className="rounded-4xl py-1"
+            className="rounded-full py-1"
           />
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex w-auto font-sans text-blue-500 font-bold text-lg">
-          <Link className="hover:text-stone-400 ml-6" href={"/"}>
+        <div className="hidden md:flex w-auto font-sans text-primary font-bold text-lg text-cyan-600">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/"}>
             Home
           </Link>
-          <Link href={"/about"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/about"}>
             About Us
           </Link>
-          <Link href={"/wedding"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/wedding"}>
             Weddings
           </Link>
-          <Link href={"/hotels"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/hotels"}>
             Hotels
           </Link>
-          <Link href={"/cruise"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/cruise"}>
             Cruises
           </Link>
-          <Link href={"/visa"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/visa"}>
             Visa
           </Link>
-          <Link href={"/form"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/form"}>
             Contact Us
           </Link>
-          <Link href={"/admin"} className="ml-6 hover:text-stone-400">
+          <Link className="hover:text-secondary ml-6 transition-all duration-300" href={"/admin"}>
             Admin
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center font-extrabold ">
           <button
             onClick={toggleMenu}
-            className="text-gray-800 focus:outline-none"
+            className="text-cyan-600 focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -85,57 +85,57 @@ const Navbar = () => {
         <div className="md:hidden absolute top-[80px] left-0 w-full bg-white shadow-md">
           <div className="flex flex-col items-center py-4">
             <Link
-              className="hover:text-green-500 py-2 text-lg"
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/"}
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/about"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               About Us
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/wedding"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               Weddings
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/hotels"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               Hotels
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/cruise"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               Cruises
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/visa"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               Visa
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/form"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
             </Link>
             <Link
+              className="hover:text-secondary py-2 text-lg transition-all duration-300"
               href={"/admin"}
-              className="hover:text-green-500 py-2 text-lg"
               onClick={() => setIsOpen(false)}
             >
               Admin

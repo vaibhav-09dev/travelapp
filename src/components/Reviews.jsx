@@ -1,8 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Carousel } from "flowbite-react";
-import Slider from "./Slider";
 import axios from "axios";
+import Slider from "./Slider";
 
 const Reviews = () => {
   const [review, setreview] = useState({
@@ -26,7 +25,7 @@ const Reviews = () => {
     e.preventDefault();
     try {
       await axios.post(`${API_BASE_URL}/api/Reviewdata`, review).then((res) => {
-        alert("Request sent successfully!");
+        alert("Review submitted successfully!");
         setreview({ name: "", review: "" });
         fetchReviews();
       });
@@ -37,34 +36,31 @@ const Reviews = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center h-auto w-full mb-4 border-stone-700 border-2 p-4">
+    <div className="flex flex-col md:flex-row justify-around items-center h-auto w-full mb-4 border-stone-700 border-2 p-8 bg-gray-50 rounded-lg shadow-lg">
       {/* Form Section */}
       <div className="h-auto md:h-[400px] w-full md:w-[50%] md:ml-8 mt-8 md:mt-0">
-        <h1 className="text-3xl md:text-5xl text-stone-600 font-bold font-serif text-center md:text-left">
-          Write your Experience
+        <h1 className="text-3xl md:text-5xl text-primary font-bold font-serif text-center md:text-left mb-6">
+          Write Your Experience
         </h1>
-        <br />
         <input
-          type="name"
+          type="text"
           placeholder="Enter Name"
           value={review.name}
           onChange={(e) => setreview({ ...review, name: e.target.value })}
-          className="border-gray-700 text-gray-700 h-[40px] rounded-md border bg-transparent w-full md:w-[90%] text-left text-lg md:text-xl mt-5 p-2"/>
-        <br />
+          className="border-gray-300 text-gray-700 h-[50px] rounded-lg border bg-white w-full md:w-[90%] text-left text-lg md:text-xl mt-4 p-4 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none"
+        />
         <textarea
-          type="review"
           placeholder="Enter Review"
           value={review.review}
           onChange={(e) => setreview({ ...review, review: e.target.value })}
-          className="border-gray-700 text-gray-700 rounded-md border bg-transparent w-full md:w-[90%] text-left text-lg md:text-xl mt-5 p-2"
+          className="border-gray-300 text-gray-700 rounded-lg border bg-white w-full md:w-[90%] text-left text-lg md:text-xl mt-4 p-4 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none"
           rows={5}
         />
-        <br />
         <button
           onClick={click}
-          className="text-stone-500 hover:text-white border border-stone-600 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mt-4 w-full md:w-auto"
+          className="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-secondary font-medium rounded-lg text-lg px-6 py-3 text-center mt-6 w-full md:w-auto shadow-lg transition-all duration-300"
         >
-          Send Review
+          Submit Review
         </button>
       </div>
 

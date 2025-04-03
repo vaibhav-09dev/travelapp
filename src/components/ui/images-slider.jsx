@@ -130,7 +130,7 @@ export const ImagesSlider = ({
             variants={slideVariants}
             className="image h-full w-full absolute inset-0 object-cover object-center" />
         </AnimatePresence>
-      )}
-    </div>
+      )} 
+    </div> 
   );
 };

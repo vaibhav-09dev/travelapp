@@ -6,13 +6,13 @@ import Link from "next/link";
 
 const Third = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center h-auto md:h-[600px] w-full bg-white px-4 md:px-0">
+    <div className="flex flex-col md:flex-row justify-between items-center h-auto md:h-[600px] w-full bg-background px-4 md:px-8 py-16">
       {/* Image Section */}
       <div className="h-auto md:h-[620px] w-full md:w-[900px] flex justify-center">
         <Image
           src={cruise1}
-          alt="cruise"
-          className="rounded-lg"
+          alt="Luxury Cruise"
+          className="rounded-lg shadow-lg"
           height={620}
           width={900}
           style={{ objectFit: "cover" }}
@@ -20,32 +20,42 @@ const Third = () => {
       </div>
 
       {/* Text Section */}
-      <div className="h-auto md:h-[600px] w-full md:w-[500px] text-center md:text-left mt-10 md:mt-36 md:ml-16">
-        <h2 className="text-lg md:text-xl font-bold font-serif text-stone-600">
+      <div className="h-auto md:h-[600px] w-full md:w-[500px] text-center md:text-left mt-10 md:mt-0 md:ml-16">
+        <h2 className="text-xl md:text-2xl font-bold font-serif text-primary">
           Quick
         </h2>
-        <h1 className="text-4xl md:text-6xl font-extrabold font-serif text-stone-600">
+        <h1 className="text-4xl md:text-6xl font-extrabold font-serif italic text-stone-500 text-secondary mb-6">
           SERVICES
         </h1>
-        <br />
-        <p className="font-mono text-neutral-600 text-sm md:text-base">
-          As one of the fastest growing Luxury travel companies, Wellcome Tours
-          offers an extensive selection of hotels, flights, bus, and tour
+        <p className="font-sans text-muted font-medium text-base md:text-lg leading-relaxed mb-6">
+          As one of the fastest-growing luxury travel companies, Wellcome Tours
+          offers an extensive selection of hotels, flights, buses, and tour
           packages to meet every specific need of individual, group, and
           corporate clients.
         </p>
-        <br />
-        <div className="text-2xl md:text-4xl font-mono text-stone-400">
-          <Link href={"/"} className="hover:text-stone-700">
-            <h1>Super Yachts</h1>
+
+        {/* Links Section */}
+        <div className="grid grid-cols-2 gap-4 md:gap-6 text-lg md:text-4xl text-stone-600 font-bold text-primary font-serif">
+          <Link href={"/cruise"} className="hover:text-secondary transition-all">
+            Cruises
           </Link>
-          <br />
-          <Link href={"/"} className="hover:text-stone-700">
-            <h1>Cruises</h1>
+          <Link href={"/visa"} className="hover:text-secondary transition-all">
+            Visa
           </Link>
-          <br />
-          <Link href={"/"} className="hover:text-stone-700">
-            <h1>Hotels</h1>
+          <Link href={"/hotels"} className="hover:text-secondary transition-all">
+            Hotels
+          </Link>
+          <Link href={"/form"} className="hover:text-secondary transition-all">
+            Yachts
+          </Link>
+          <Link href={"/form"} className="hover:text-secondary transition-all">
+            Flights
+          </Link>
+          <Link href={"/form"} className="hover:text-secondary transition-all">
+            Travel
+          </Link>
+          <Link href={"/form"} className="hover:text-secondary transition-all">
+            Insurance
           </Link>
         </div>
       </div>
