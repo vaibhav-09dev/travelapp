@@ -13,17 +13,16 @@ const Wedding2 = () => {
         <h1 className="text-4xl md:text-6xl font-extrabold text-stone-600 font-serif text-secondary mb-6">
           Your Way...
         </h1>
-        <p className="text-base md:text-xl  font-medium italic font-serif text-muted leading-relaxed">
+        <p className="md:text-xl font-medium italic font-serif text-muted leading-relaxed">
           At our travel company, we believe that every couple deserves the
           wedding of their dreams. Let us make your destination wedding a
           reality. Contact us today to learn more about our destination wedding
           services and start planning your dream wedding.
         </p>
-        
       </div>
 
       {/* Rolling Gallery Section */}
-      <div className="w-full md:w-[800px] md:mb-0 mb-40 md:mt-0">
+      <div className="w-full md:w-[800px] md:mb-0 mb-20 md:mt-0">
         <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
     </div>
