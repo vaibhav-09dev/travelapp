@@ -23,7 +23,7 @@ const Wedding2 = () => {
       </div>
 
       {/* Rolling Gallery Section */}
-      <div className="w-full md:w-[800px] mt-10 md:mt-0">
+      <div className="w-full md:w-[800px] md:mb-0 mb-40 md:mt-0">
         <RollingGallery autoplay={true} pauseOnHover={true} />
       </div>
     </div>
