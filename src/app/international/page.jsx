@@ -46,8 +46,14 @@ const page = () => {
 
             </section> <br /> <br />
             <div>
-            <h2 className=' z-30  text-xl font-bold font-mono text-black text-left    ml-28'>Choose Your</h2>
-                <h1 className='text-6xl font-bold font-serif text-stone-600 ml-28 '>International Destinations</h1> <br /></div>
+            <h2 className="z-30 text-lg md:text-xl font-bold font-mono text-primary text-left ml-6 md:ml-28">
+    Choose Your
+  </h2>
+
+  {/* Main Heading */}
+  <h1 className="text-3xl md:text-6xl font-bold font-serif text-stone-600 text-left ml-6 md:ml-28 leading-tight">
+    International Destinations
+  </h1> <br /></div>
             <div><Masonry data={data} /></div> <br /> <br />
         </div>
   )
