@@ -1,95 +1,94 @@
 "use client";
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
-import Image from 'next/image';
-import abt1 from "../../../public/abt2.png"
-import c1 from "../../../public/c1.jpg"
-import c2 from "../../../public/c2.jpg"
-import c3 from "../../../public/c3.jpg"
-import abt2 from "../../../public/abt-1.png"
+import Image from "next/image";
+import abt1 from "../../../public/abt2.png";
+import c1 from "../../../public/c1.jpg";
+import c2 from "../../../public/c2.jpg";
+import c3 from "../../../public/c3.jpg";
+import abt2 from "../../../public/abt-1.png";
 import { Carousel } from "flowbite-react";
-// Import the Navigation component
 
 const Page = () => {
   return (
-    <main className="min-h-screen bg-trips-exotica-beige ">
-    
-
-      <section className="relative h-[40vh] md:h-[50vh]">
-        <div className="absolute inset-0 bg-black">
-          <Image
-            src={abt2}
-            alt="About Us"
-            fill
-            className="object-cover opacity-80"
-          />
-        </div>
-        <div className="absolute inset-0 flex flex-col justify-center text-white text-left p-4 md:ml-12">
-          <h1 className="trips-exotica-header font-serif text-3xl md:text-7xl font-bold mb-2">
-            About Us
-          </h1>
-          <p className="text-xl font-serif">Know To wellcome Tours</p>
-        </div>
-      </section>
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100">
+      {/* Hero Section */}
+     
 
       {/* About Content Section */}
-     {/* About Content Section */}
-     <section className="py-16 px-16 bg-white">
-        <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row items-center">
-            {/* Image Section */}
-            <motion.div
-              className="md:w-1/3 mb-8 md:mb-0"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <Image
-                src={abt1}
-                alt="About Trips Exotica"
-                width={400}
-                height={300}
-                className="rounded-lg shadow-lg mx-auto"
-              />
-              <h1 className="text-lg text-center font-bold font-serif mt-4 text-primary">
-                <span className="text-2xl text-stone-600">ANKUR KALRA</span> <br />
-                <span className="text-lg text-muted italic">TRAVEL CONSULTANT</span> <br />
-                <span className="text-sm text-muted font-light">
-                  SINCE 2009 WITH 11 YEARS OF EXPERIENCE IN THE HOSPITALITY INDUSTRY
-                </span>
-              </h1>
-            </motion.div>
+      <section className="py-16 px-16 bg-gradient-to-r from-gray-300 via-white to-gray-300 shadow-lg rounded-lg mt-28">
+  <div className="container mx-auto">
+    <div className="flex flex-col md:flex-row items-center">
+      {/* Image Section */}
+      <motion.div
+        className="md:w-1/3 mb-8 md:mb-0"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        whileHover={{ scale: 1.05, hanging: 0.1 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <Image
+          src={abt1}
+          alt="About Trips Exotica"
+          width={400}
+          height={300}
+          className="rounded-lg shadow-lg mx-auto hover:scale-105 transition-transform duration-300"
+        />
+        <motion.h1
+          className="text-lg text-center font-bold font-serif mt-4 text-primary"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <span className="text-2xl text-stone-600">ANKUR KALRA</span> <br />
+          <span className="text-lg text-muted italic">TRAVEL CONSULTANT</span> <br />
+          <span className="text-sm text-muted font-light">
+            SINCE 2009 WITH 11 YEARS OF EXPERIENCE IN THE HOSPITALITY INDUSTRY
+          </span>
+        </motion.h1>
+      </motion.div>
 
-            {/* Text Section */}
-            <motion.div
-              className="md:w-2/3 md:pl-12"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-4xl md:text-6xl font-extrabold font-serif text-yellow-500 mb-6">
-                About Us
-              </h1>
-              <p className="text-base md:text-xl text-stone-600 font-serif italic font-black text-muted leading-relaxed">
-                Welcome to our travel company, where we offer an exceptional range of
-                domestic travel services that will take you on an adventure through
-                some of the most beautiful and diverse destinations within your own
-                country.
-                <br />
-                <br />
-                Whether you're looking for a relaxing beach vacation, a thrilling city
-                break, or an adventurous journey through the countryside, we've got
-                you covered. Our team of experienced travel experts will work with
-                you to customize your itinerary, ensuring that you get the most out of
-                your trip.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-      {/* Why Choose Us Section */} 
-     {/* Why Choose Us Section */}
-<section className="py-16 px-4 bg-blue-300">
+      {/* Text Section */}
+      <motion.div
+        className="md:w-2/3 md:pl-12"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <motion.h1
+          className="text-4xl md:text-6xl font-extrabold font-serif text-secondary text-gradient bg-clip-text bg-gradient-to-r from-yellow-500 to-red-500 mb-6"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          whileHover={{ scale: 1.1 }}
+        >
+          About Us
+        </motion.h1>
+        <motion.p
+          className="text-base md:text-xl text-gray-800 font-serif font-black text-muted leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          Welcome to our travel company, where we offer an exceptional range of
+          domestic travel services that will take you on an adventure through
+          some of the most beautiful and diverse destinations within your own
+          country.
+          <br />
+          <br />
+          Whether you're looking for a relaxing beach vacation, a thrilling city
+          break, or an adventurous journey through the countryside, we've got
+          you covered. Our team of experienced travel experts will work with
+          you to customize your itinerary, ensuring that you get the most out of
+          your trip.
+        </motion.p>
+      </motion.div>
+    </div>
+  </div>
+</section>
+      {/* Why Choose Us Section */}
+      <section className="py-16 px-4 bg-blue-200">
   <div className="container mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold font-serif text-primary mb-12">
       Why Choose Us?
@@ -222,16 +221,32 @@ const Page = () => {
     </div>
   </div>
 </section>
-      {/* Awards Section */}
-      <section className="py-16 px-4 bg-gray-100">
-  <div className="container mx-auto text-center">
-    <h2 className="text-3xl md:text-5xl font-bold font-serif text-stone-500 underline text-primary mb-8">
-      Awards and Recognition
-    </h2>
-    <p className="text-lg md:text-xl text-muted leading-relaxed max-w-3xl mx-auto mb-12">
-      We are honored to be recognized for our commitment to excellence in the travel industry. Here are some of the awards and recognitions we have received over the years.
-    </p>
 
+      {/* Awards Section */}
+      <section className="py-16 px-4 ">
+  <div className="container mx-auto text-center">
+    <motion.h2
+      className="text-3xl md:text-5xl font-bold font-serif text-secondary underline text-primary mb-8"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      whileHover={{
+        scale: 1.2,
+        hanging: 0.1,
+        textShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
+         // Changes text color on hover
+      }}
+    >
+      Awards and Recognition
+    </motion.h2>
+    <motion.p
+      className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-12"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.3 }}
+    >
+      We are honored to be recognized for our commitment to excellence in the travel industry. Here are some of the awards and recognitions we have received over the years.
+    </motion.p>
     {/* Responsive Grid for Certificates */}
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {/* Certificate 1 */}
@@ -281,43 +296,63 @@ const Page = () => {
     </div>
   </div>
 </section>
+ {/* FAQ Section */}
+ <section className="py-16 px-4 bg-gradient-to-b from-gray-200 to-gray-300">
+  <div className="container mx-auto">
+    <motion.h2
+      className="text-2xl md:text-5xl mb-8 font-extrabold font-serif text-center text-stone-600"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      FAQ
+    </motion.h2>
+    <motion.p
+      className="text-center text-gray-700 mb-12 max-w-3xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.3 }}
+    >
+      As one of the fastest-growing luxury travel companies, Wellcome Tours offers an extensive selection of hotels, flights, buses, and tour packages to meet every specific need of individual, group, and corporate clients.
+    </motion.p>
 
-      {/* FAQ Section */}
-      <section className="py-16 px-4 bg-gray-100">
-        <div className="container mx-auto">
-          <h2 className="trips-exotica-subheader text-2xl md:text-5xl mb-8 font-extrabold font-serif text-center text-stone-600">FAQ</h2>
-          <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-            As one of the fastest growing Luxury travel company, wellcome Tours offers an extensive selection of hotels, flights, bus and tour packages, to meet every specific need of the individual, group and corporate clients.
-          </p>
+    <div className="max-w-3xl mx-auto space-y-6">
+      {[
+        {
+          title: "Global Partner Network",
+          description:
+            "We have developed a trustworthy relationship with a wide range of global partners, including airlines (domestic and international), hotels, bus services, and more; which helps us provide tailor-made solutions for our clients.",
+        },
+        {
+          title: "Specialized Holiday Deals",
+          description:
+            "Do you want a specific theme-based holiday package such as an adventure holiday theme? Choose your type of holiday theme, and leave the rest to us to provide you with an exotic experience.",
+        },
+        {
+          title: "Specified Corporate Tour",
+          description:
+            "We specialize in a wide variety of corporate travel plans, including conferences, outdoor meetings, corporate training, self-defense, etc.",
+        },
+      ].map((faq, index) => (
+        <motion.div
+          key={index}
+          className="border-b border-gray-300 pb-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: index * 0.1 }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <h3 className="text-2xl mb-2 font-bold text-secondary">
+            {faq.title}
+          </h3>
+          <p className="text-gray-700 font-medium">{faq.description}</p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
-          <div className="max-w-3xl mx-auto space-y-4">
-            <div className="border-b border-gray-300 pb-4">
-              <h3 className="text-2xl mb-2 trips-exotica-gold font-bold">Global Partner Network</h3>
-              <p className="text-gray-700 font-bold">
-                We have developed a trustworthy relationship with a wide range of global partners, including airlines (domestic and international), hotels, bus services and more; which helps us provide tailor-made solutions for our clients.
-              </p>
-            </div>
-            <div className="border-b border-gray-300 pb-4 font-bold">
-              <h3 className="text-2xl mb-2 trips-exotica-gold">Specialized Holiday Deals</h3>
-              <p className="text-gray-700 font-bold">
-                Do you want a specific theme based holiday package such as adventure holiday theme. Choose your type of holiday theme, and leave the rest to us to provide you with an exotic experience.
-              </p>
-            </div>
-            <div className="border-b border-gray-300 pb-4">
-              <h3 className="text-2xl mb-2 trips-exotica-gold font-bold">Specified Corporate Tour</h3>
-              <p className="text-gray-700 font-bold">
-                We specialize in a wide variety of corporate travel plans, including conferences, outdoor meetings, Corporate Training, Self defense, etc.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       
-
-      
-
-      
-          
     </main>
   );
 };

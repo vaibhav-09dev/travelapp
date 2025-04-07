@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import logo from "../../public/logo.jpg";
 
 const Navbar = () => {
@@ -12,77 +13,94 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:opacity-100 shadow-2xl fixed top-0 left-0 w-full z-50">
+    <motion.div
+      className="md:opacity-80 shadow-2xl fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 transition-all duration-500"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="flex md:justify-between justify-around items-center h-[80px] px-4 md:px-8">
-{/* Logo Section */}
-<div className="h-[80px] w-[200px] flex justify-center items-center">
-  <Image
-    src={logo}
-    width={80}
-    alt="logo"
-    className="rounded-full py-1 transition-transform duration-500 hover:scale-110 hover:rotate-12"
-  />
-</div>
+        {/* Logo Section */}
+        <motion.div
+          className="h-[80px] w-[200px] flex justify-center items-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src={logo}
+            width={80}
+            alt="logo"
+            className="rounded-full py-1"
+          />
+        </motion.div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex w-auto font-sans text-primary font-bold text-lg text-lime-300">
+        <motion.div
+          className="hidden md:flex w-auto font-sans text-primary font-bold text-lg text-gray-800"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/"}
           >
-            Home
+            HOME
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/about"}
           >
-            About Us
+            ABOUT US
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/wedding"}
           >
-            Weddings
+            WEEDINGS
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/hotels"}
           >
-            Hotels
+            HOTELS
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/cruise"}
           >
-            Cruises
+            CRUISES
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/visa"}
           >
-            Visa
+            VISA
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/form"}
           >
-            Contact Us
+            CONTACT US
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/admin"}
           >
-            Admin
+            ADMIN
           </Link>
-        </div>
+        </motion.div>
 
         {/* Mobile Menu */}
-        <div
-          className={`md:hidden absolute top-[80px] left-0 w-full bg-white shadow-md transform transition-transform duration-500 ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
-        >
-          <div className="flex flex-col items-center py-4">
+        {isOpen && (
+          <motion.div
+            className="md:hidden absolute top-[80px] left-0 w-full bg-white shadow-md"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="flex flex-col items-center py-4">
             <Link
               className="hover:text-yellow-500 py-2 text-lg text-gray-800 transition-all duration-300"
               href={"/"}
@@ -139,17 +157,19 @@ const Navbar = () => {
             >
               Admin
             </Link>
-          </div>
-        </div>
+            </div>
+          </motion.div>
+        )}
 
         {/* Hamburger Icon */}
-        <div
+        <motion.div
           className="md:hidden flex items-center cursor-pointer"
           onClick={toggleMenu}
+          whileHover={{ scale: 1.1 }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-gray-800 hover:text-yellow-500 transition-all duration-300"
+            className="h-8 w-8 text-gray-800"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -159,9 +179,9 @@ const Navbar = () => {
           >
             <path d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

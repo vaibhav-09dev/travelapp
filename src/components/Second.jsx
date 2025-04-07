@@ -4,16 +4,16 @@ import CircularGallery from "../components/ui/CircularGallery";
 
 const Second = () => {
   return (
-    <div className="h-auto w-full flex flex-col md:flex-row justify-around items-center bg-background px-4 md:px-0">
+    <div className="h-auto w-full flex flex-col md:flex-row justify-around items-center bg-gradient-to-b from-blue-50 via-gray-100 to-gray-200 px-4 md:px-0 py-16">
       {/* Text Section */}
       <motion.div
-        className="mt-10 md:mt-20 w-full font-bold md:w-[700px] md:ml-28 text-center md:text-left"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        className="mt-10 md:mt-20 w-full font-bold md:w-[700px] md:ml-28 text-center md:text-left "
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
       >
         <motion.h2
-          className="font-bold text-xl text-primary"
+          className="font-bold text-2xl md:text-3xl text-blue-600 tracking-wide uppercase"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -21,20 +21,21 @@ const Second = () => {
           Explore the Popular
         </motion.h2>
         <motion.h1
-          className="text-4xl md:text-7xl font-bold font-[cursive] italic text-stone-500 bg-clip-text bg-gradient-to-r from-primary to-secondary"
+          className="text-3xl md:text-7xl font-extrabold  tracking-wide bg-clip-text bg-gradient-to-r text-secondary drop-shadow-lg"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 3, delay: 0.4 }}
+          whileHover={{ scale: 1.1, hanging: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
+          whileTap={{ scale: 2}}
         >
           Destination
         </motion.h1>
         <br />
         <motion.p
-          className="w-full md:w-[700px] font-serif italic text-muted font-medium text-base md:text-xl leading-relaxed"
+          className="w-full md:w-[700px] text-gray-700 text-sm md:text-lg tracking-wide leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 3, delay: 0.8 }}
         >
           Welcome to our travel company, where we offer an exceptional range of
           domestic travel services that will take you on an adventure through
@@ -50,7 +51,7 @@ const Second = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        whileHover={{ scale: 1.1, bend: 5}}
+        whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
         <CircularGallery bend={0} textColor="black" borderRadius={0.05} />
