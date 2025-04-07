@@ -36,17 +36,27 @@ const First = () => {
         className="z-50 flex flex-col justify-center items-center text-center px-4"
       >
         {/* Heading */}
-        <motion.p className="font-bold text-xl md:text-4xl lg:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+        <motion.p
+          className="font-bold text-xl md:text-4xl lg:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 3, delay: 0.3 }}
+        >
           Travel far and wide, <br /> and make memories that will last a lifetime.
         </motion.p>
 
         {/* Button */}
-        <button
+        <motion.button
           onClick={des}
           className="px-4 py-2 md:px-6 md:py-3 bg-primary text-white font-semibold text-sm md:text-lg rounded-full shadow-lg hover:bg-secondary transition-all duration-300 mt-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0, delay: 0 }}
+          whileHover={{ scale: 1.5, textShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
+          whileTap={{ scale: 0.95 }}
         >
           Explore Now →
-        </button>
+        </motion.button>
       </motion.div>
     </ImagesSlider>
   );

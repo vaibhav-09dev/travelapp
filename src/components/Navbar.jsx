@@ -156,6 +156,13 @@ const Navbar = () => {
             </Link>
             <Link
               className="hover:text-yellow-500 py-2 text-lg text-gray-800 transition-all duration-300"
+              href={"/dham"}
+              onClick={() => setIsOpen(false)}
+            >
+              4-Dhaam
+            </Link>
+            <Link
+              className="hover:text-yellow-500 py-2 text-lg text-gray-800 transition-all duration-300"
               href={"/form"}
               onClick={() => setIsOpen(false)}
             >

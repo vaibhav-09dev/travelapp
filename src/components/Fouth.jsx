@@ -25,7 +25,7 @@ const Fouth = () => {
  
 
   return (
-    <div className="h-auto w-full  py-16 px-4 md:px-8 bg-white">
+    <div className="h-auto w-full  py-16 px-4 md:px-8 bg-gradient-to-b from-gray-200 via-gray-100  shadow-lg rounded-lg">
     {/* Heading Section */}
     <section className=" text-black py-16 px-8 rounded-lg shadow-2xl ">
       <h1 className="text-4xl md:text-6xl font-bold font-serif mb-4">

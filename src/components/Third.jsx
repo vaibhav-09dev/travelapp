@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Third = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center h-auto md:h-[600px] w-full bg-gradient-to-r  px-4 md:px-8 py-16">
+    <div className="flex flex-col md:flex-row justify-between items-center h-auto md:h-[600px] w-full bg-gradient-to-b from-blue- via-gray-100 to-gray-100  px-4 md:px-8 py-16">
       {/* Image Section */}
       <motion.div
         className="h-auto md:h-[620px] w-full md:w-[900px] flex justify-center"
