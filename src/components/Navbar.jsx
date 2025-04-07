@@ -25,7 +25,7 @@ const Navbar = () => {
 </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex w-auto font-sans text-primary font-bold text-lg text-gray-300">
+        <div className="hidden md:flex w-auto font-sans text-primary font-bold text-lg text-lime-300">
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/"}

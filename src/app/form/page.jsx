@@ -37,7 +37,7 @@ const Page = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="">
       {/* Hero Section */}
       <section className="relative h-[40vh] md:h-[35vh]">
         <div className="absolute inset-0 bg-black">

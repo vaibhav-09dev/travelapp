@@ -30,8 +30,8 @@ const page = () => {
         
       ];
   return (
-    <div className='mt-20'>
-            <section className="relative h-[40vh] md:h-[40vh] mt-20">
+    <div className=''>
+            <section className="relative h-[40vh] md:h-[40vh] ">
                 <div className="absolute inset-0 bg-black">
                     <Image
                         src={international}

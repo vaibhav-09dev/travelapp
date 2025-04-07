@@ -12,7 +12,7 @@ import { Carousel } from "flowbite-react";
 
 const Page = () => {
   return (
-    <main className="min-h-screen bg-trips-exotica-beige mt-20">
+    <main className="min-h-screen bg-trips-exotica-beige ">
     
 
       <section className="relative h-[40vh] md:h-[50vh]">
@@ -89,7 +89,7 @@ const Page = () => {
       </section>
       {/* Why Choose Us Section */} 
      {/* Why Choose Us Section */}
-<section className="py-16 px-4 bg-background">
+<section className="py-16 px-4 bg-blue-300">
   <div className="container mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold font-serif text-primary mb-12">
       Why Choose Us?

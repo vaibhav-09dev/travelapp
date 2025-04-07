@@ -16,9 +16,9 @@ const page = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="">
       {/* Hero Section */}
-      <section className="relative h-[35vh] md:h-[50vh] mt-10">
+      <section className="relative h-[35vh] md:h-[50vh] ">
         <div className="absolute inset-0 bg-black">
           <Image
             src={pic1}
