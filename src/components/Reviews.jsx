@@ -19,7 +19,7 @@ const Reviews = () => {
       setAllReviews(response.data.alluser || []);
     } catch (error) {
       console.error("Error fetching reviews:", error.message);
-      alert("Failed to fetch reviews. Please try again later.");
+      
     }
   };
 
@@ -33,7 +33,7 @@ const Reviews = () => {
       });
     } catch (error) {
       console.error("Error in sending review:", error.message);
-      alert(error.response?.data?.message || "Failed to send the review. Please try again.");
+      
     }
   };
 
