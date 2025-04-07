@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { motion } from "framer-motion";
 import Image from 'next/image';
 import abt1 from "../../../public/abt2.png"
 import c1 from "../../../public/c1.jpg"
@@ -33,50 +34,59 @@ const Page = () => {
 
       {/* About Content Section */}
      {/* About Content Section */}
-<section className="py-16 px-4 bg-white ">
-  <div className="container mx-auto">
-    <div className="flex flex-col md:flex-row items-center">
-      {/* Image Section */}
-      <div className="md:w-1/3 mb-8 md:mb-0">
-        <Image
-          src={abt1}
-          alt="About Trips Exotica"
-          width={400}
-          height={300}
-          className="rounded-lg shadow-lg mx-auto"
-        />
-        <h1 className="text-lg text-center font-bold font-serif mt-4 text-primary">
-          ANKUR KALRA <br />
-          <span className="text-muted">TRAVEL CONSULTANT</span> <br />
-          <span className="text-muted">SINCE 2009 WITH 11YEARS OF EXPERIENCE IN HOSPITALITY INDUSTRY
-          </span>
-        </h1>
-      </div>
-      {/* Text Section */}
-      <div className="md:w-2/3 md:pl-12">
-        <h1 className="text-4xl md:text-6xl font-bold font-serif text-stone-500 text-primary mb-6">
-          About Us
-        </h1>
-        <p className="text-base md:text-xl font-serif italic text-muted leading-relaxed">
-          Welcome to our travel company, where we offer an exceptional range of
-          domestic travel services that will take you on an adventure through
-          some of the most beautiful and diverse destinations within your own
-          country.
-          <br />
-          <br />
-          Whether you're looking for a relaxing beach vacation, a thrilling city
-          break, or an adventurous journey through the countryside, we've got
-          you covered. Our team of experienced travel experts will work with
-          you to customize your itinerary, ensuring that you get the most out of
-          your trip.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</section>
-      
+     <section className="py-16 px-16 bg-white">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Image Section */}
+            <motion.div
+              className="md:w-1/3 mb-8 md:mb-0"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <Image
+                src={abt1}
+                alt="About Trips Exotica"
+                width={400}
+                height={300}
+                className="rounded-lg shadow-lg mx-auto"
+              />
+              <h1 className="text-lg text-center font-bold font-serif mt-4 text-primary">
+                <span className="text-2xl text-stone-600">ANKUR KALRA</span> <br />
+                <span className="text-lg text-muted italic">TRAVEL CONSULTANT</span> <br />
+                <span className="text-sm text-muted font-light">
+                  SINCE 2009 WITH 11 YEARS OF EXPERIENCE IN THE HOSPITALITY INDUSTRY
+                </span>
+              </h1>
+            </motion.div>
 
+            {/* Text Section */}
+            <motion.div
+              className="md:w-2/3 md:pl-12"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-4xl md:text-6xl font-extrabold font-serif text-yellow-500 mb-6">
+                About Us
+              </h1>
+              <p className="text-base md:text-xl text-stone-600 font-serif italic font-black text-muted leading-relaxed">
+                Welcome to our travel company, where we offer an exceptional range of
+                domestic travel services that will take you on an adventure through
+                some of the most beautiful and diverse destinations within your own
+                country.
+                <br />
+                <br />
+                Whether you're looking for a relaxing beach vacation, a thrilling city
+                break, or an adventurous journey through the countryside, we've got
+                you covered. Our team of experienced travel experts will work with
+                you to customize your itinerary, ensuring that you get the most out of
+                your trip.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
       {/* Why Choose Us Section */} 
      {/* Why Choose Us Section */}
 <section className="py-16 px-4 bg-background">
