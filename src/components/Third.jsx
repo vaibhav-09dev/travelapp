@@ -41,7 +41,7 @@ const Third = () => {
           Quick
         </motion.h2>
         <motion.h1
-          className="text-3xl md:text-6xl font-extrabold italic  bg-clip-text bg-gradient-to-r text-secondary drop-shadow-lg mb-6"
+          className="text-3xl md:text-6xl font-extrabold   bg-clip-text bg-gradient-to-r text-secondary drop-shadow-lg mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}

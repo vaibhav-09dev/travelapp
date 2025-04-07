@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import CircularGallery from "../components/ui/CircularGallery";
+import Link from "next/link";
+import React from "react";
 
 const Second = () => {
   return (
@@ -54,7 +56,11 @@ const Second = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
+        <Link href="/international">
+          
+            {/* Circular Gallery Component */}
         <CircularGallery bend={0} textColor="black" borderRadius={0.05} />
+        </Link>
       </motion.div>
     </div>
   );

@@ -27,12 +27,17 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
+          <Link
+            className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
+            href={"/"}
+          >
           <Image
             src={logo}
             width={80}
             alt="logo"
             className="rounded-full py-1"
           />
+          </Link>
         </motion.div>
 
         {/* Desktop Menu */}
@@ -77,6 +82,12 @@ const Navbar = () => {
             href={"/visa"}
           >
             VISA
+          </Link>
+          <Link
+            className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
+            href={"/dham"}
+          >
+            4-DHAAM
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"

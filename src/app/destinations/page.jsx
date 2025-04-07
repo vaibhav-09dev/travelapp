@@ -93,7 +93,7 @@ const page = () => {
             transition={{ duration: 1 }}
           >
             <img
-              src="https://cdn.pixabay.com/photo/2020/01/14/14/02/landscape-4765149_1280.jpg"
+              src="https://storage.googleapis.com/stateless-www-justwravel-com/2018/04/1460182886_notes-810x538.png"
               alt="Domestic"
               className="rounded-lg w-full md:w-[500px] h-auto shadow-lg"
             />
