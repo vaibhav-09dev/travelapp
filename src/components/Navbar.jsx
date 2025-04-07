@@ -63,7 +63,7 @@ const Navbar = () => {
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/wedding"}
           >
-            WEEDINGS
+            WEDDINGS
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"

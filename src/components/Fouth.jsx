@@ -51,10 +51,10 @@ const Fouth = () => {
         </div>
 
         {/* Explore All Button */}
-        <div className="flex justify-center items-center mt-6">
+        <div className="flex justify-center items-center ">
           <Link
             href={"/destinations"}
-            className="text-lg md:text-2xl font-bold hover:text-stone-600 transition-all duration-300"
+            className="text-lg md:text-3xl font-bold hover:text-blue-500 mb-5 underline text-secondary transition-all duration-300"
           >
             Explore All
           </Link>

@@ -5,7 +5,7 @@
 @import "react-pdf/dist/esm/Page/TextLayer.css";
 
 :root {
-  --background: #ffffff;
+  --background: #cabca1 ;
   --foreground: #171717;
 }
 

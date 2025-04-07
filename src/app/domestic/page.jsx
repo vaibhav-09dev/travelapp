@@ -17,9 +17,9 @@ const page = () => {
     { title: "Andaman", t2: "Andaman", src: dd1 },
     { title: "Goa", t2: "goa", src: dd2 },
     { title: "Himachal", t2: "himachal", src: dd3 },
-    { title: "4 Dham by Helicopter", t2: "dham", src: dd7 },
-    { title: "Kerela", t2: "kerela", src: dd4 },
-    { title: "Rajsthan", t2: "rajsthan", src: dd5 },
+    { title: "4 Dhaam by Helicopter", t2: "dham", src: dd7 },
+    { title: "Kerala", t2: "kerala", src: dd4 },
+    { title: "Rajasthan", t2: "rajasthan", src: dd5 },
     { title: "Uttarakhand", t2: "uttarakhand", src: dd6 },
   ];
 

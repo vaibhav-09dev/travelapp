@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Slider from "./Slider";
 
+const API_BASE_URL = "http://localhost:3000"; // Replace with your actual API base URL
+
 const Reviews = () => {
   const [review, setreview] = useState({
     name: "",
@@ -34,6 +36,10 @@ const Reviews = () => {
       alert(error.response?.data?.message || "Failed to send the review. Please try again.");
     }
   };
+
+  useEffect(() => {
+    fetchReviews();
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row justify-around items-center h-auto w-full mb-4 border-stone-700 border-2 p-8 bg-gray-50 rounded-lg shadow-lg">
