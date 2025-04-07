@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="md:opacity-80 shadow-2xl fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 transition-all duration-500"
+      className="md:opacity-80 opacity-80 shadow-2xl fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 transition-all duration-500"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -95,7 +95,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <motion.div
-            className="md:hidden absolute top-[80px] left-0 w-full bg-white shadow-md"
+            className="md:hidden absolute top-[80px] left-0 w-full  bg-white shadow-md"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
