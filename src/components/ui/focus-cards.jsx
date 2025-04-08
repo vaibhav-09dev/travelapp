@@ -29,7 +29,7 @@ export const Card = React.memo(({
       )}>
       <div
         className="text-xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 ml-24 mb-36">
-         <Link href={"/form"} className="text-white hover:text-yellow-500 transition-all duration-300 hover:scale-110">
+         <Link href={"/form"}>
         {card.title}
         </Link>
         

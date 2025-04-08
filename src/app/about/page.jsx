@@ -16,7 +16,7 @@ const Page = () => {
      
 
       {/* About Content Section */}
-      <section className="py-16 px-16 bg-gradient-to-r from-gray-300 via-white to-gray-300 shadow-lg rounded-lg mt-28">
+      <section className="py-16 px-16 bg-gradient-to-r from-gray-200 via-white to-gray-200 shadow-lg rounded-lg mt-28">
   <div className="container mx-auto">
     <div className="flex flex-col md:flex-row items-center">
       {/* Image Section */}
@@ -57,7 +57,7 @@ const Page = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold font-serif text-secondary text-gradient bg-clip-text bg-gradient-to-r from-yellow-500 to-red-500 mb-6"
+          className="text-4xl md:text-6xl font-extrabold  text-secondary text-gradient bg-clip-text bg-gradient-to-r from-yellow-500 to-red-500 mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -66,7 +66,7 @@ const Page = () => {
           About Us
         </motion.h1>
         <motion.p
-          className="text-base md:text-xl text-gray-800 font-serif font-black text-muted leading-relaxed"
+          className="text-base md:text-xl text-gray-800  font-black leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}

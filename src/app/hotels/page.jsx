@@ -40,7 +40,7 @@ const page = () => {
       {/* Hotels Section */}
       <div className="w-full py-8 px-4 md:px-12 bg-gradient-to-b from-white via-gray-100 to-gray-200 shadow-lg rounded-lg">
         <motion.h1
-          className="text-4xl md:text-7xl  font-bold font-serif text-secondary text-center md:text-left mb-8"
+          className="text-4xl md:text-7xl  font-bold  text-secondary text-center md:text-left mb-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

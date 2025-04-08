@@ -5,7 +5,7 @@
 @import "react-pdf/dist/esm/Page/TextLayer.css";
 
 :root {
-  --background: #b99e9e  ;
+  --background: #c1a7a7  ;
   --foreground: #171717;
 }
 
@@ -28,7 +28,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #0a0a0a;
-    --background: #ededed;
+    --background: #e2dddd;
   }
 }
 

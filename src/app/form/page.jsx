@@ -109,7 +109,7 @@ const Page = () => {
       {/* Form Section */}
       <div className="py-8 px-4 md:px-12">
         <motion.h1
-          className="text-4xl md:text-5xl font-bold font-serif text-stone-600 text-center underline mb-8"
+          className="text-4xl md:text-6xl font-bold text-secondary font-sans text-center  mb-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

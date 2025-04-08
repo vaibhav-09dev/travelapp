@@ -60,7 +60,7 @@ const page = () => {
             transition={{ duration: 1.2 }}
           >
             <motion.p
-              className="text-base md:text-xl italic font-serif text-stone-800 leading-relaxed"
+              className="text-base md:text-xl italic  text-stone-800 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 0.3 }}

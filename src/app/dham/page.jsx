@@ -29,7 +29,7 @@ const page = () => {
 
       {/* Title Section */}
       <div className="py-8 px-4 md:px-12">
-        <h1 className="text-4xl md:text-6xl font-bold font-serif text-stone-600 text-center md:text-left">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-secondary  text-center md:text-left">
           4 Dham Yatra
         </h1>
       </div>
