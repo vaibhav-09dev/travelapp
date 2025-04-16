@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Reviews from "@/components/Reviews";
 import Second from "@/components/Second";
 import Third from "@/components/Third";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
     <Fouth/>
     <Data/>
     <Reviews/>
+    
+    
     
     
     

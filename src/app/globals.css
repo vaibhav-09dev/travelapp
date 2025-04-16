@@ -5,7 +5,7 @@
 @import "react-pdf/dist/esm/Page/TextLayer.css";
 
 :root {
-  --background: #c1a7a7  ;
+  --background: #d2c6c6  ;
   --foreground: #171717;
 }
 
@@ -14,6 +14,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 }
 
@@ -28,7 +29,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #0a0a0a;
-    --background: #e2dddd;
+    --background: #f0f0f0;
   }
 }
 

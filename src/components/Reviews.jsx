@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Slider from "./Slider";
+import { motion } from "framer-motion";
 
 const API_BASE_URL = "https://travelapp-acje.vercel.app"; // Replace with your actual API base URL
 
@@ -19,7 +20,6 @@ const Reviews = () => {
       setAllReviews(response.data.alluser || []);
     } catch (error) {
       console.error("Error fetching reviews:", error.message);
-      
     }
   };
 
@@ -33,7 +33,6 @@ const Reviews = () => {
       });
     } catch (error) {
       console.error("Error in sending review:", error.message);
-      
     }
   };
 
@@ -42,38 +41,26 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center h-auto w-full mb-4 border-stone-700 border-2 p-8 bg-gray-50 rounded-lg shadow-lg">
-      {/* Form Section */}
-      <div className="h-auto md:h-[400px] w-full md:w-[50%] md:ml-8 mt-8 md:mt-0">
-        <h1 className="text-3xl md:text-5xl text-primary font-bold font-serif text-center md:text-left mb-6">
-          Write Your Experience
-        </h1>
-        <input
-          type="text"
-          placeholder="Enter Name"
-          value={review.name}
-          onChange={(e) => setreview({ ...review, name: e.target.value })}
-          className="border-gray-300 text-gray-700 h-[50px] rounded-lg border bg-white w-full md:w-[90%] text-left text-lg md:text-xl mt-4 p-4 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none"
-        />
-        <textarea
-          placeholder="Enter Review"
-          value={review.review}
-          onChange={(e) => setreview({ ...review, review: e.target.value })}
-          className="border-gray-300 text-gray-700 rounded-lg border bg-white w-full md:w-[90%] text-left text-lg md:text-xl mt-4 p-4 shadow-sm focus:ring-2 focus:ring-primary focus:outline-none"
-          rows={5}
-        />
-        <button
-          onClick={click}
-          className="text-black bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-secondary font-medium rounded-lg text-lg px-6 py-3 text-center mt-6 w-full md:w-auto shadow-lg transition-all duration-300"
-        >
-          Submit Review
-        </button>
-      </div>
+    <div className="flex flex-col justify-center items-center bg-white h-auto w-full mb-8 p-6 md:p-12 rounded-lg shadow-lg">
+      {/* Title Section */}
+      <motion.h1
+        className="text-2xl md:text-4xl lg:text-5xl font-bold text-secondary mb-6 md:mb-8 text-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Clients Testimonials
+      </motion.h1>
 
       {/* Slider Section */}
-      <div className="h-auto md:h-[400px] w-full md:w-[50%] md:ml-8 mt-8 md:mt-0">
-        <Slider review={allReviews} />
-      </div>
+      <motion.div
+        className="h-[500px] md:h-[400px] lg:h-[500px] w-full md:w-full"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Slider reviews={allReviews} />
+      </motion.div>
     </div>
   );
 };

@@ -61,7 +61,7 @@ const Fouth = () => {
         </div>
       </div>
     </div>
-    <div className="h-auto w-full py-16 bg-gray-100">
+    <div className="h-auto w-full py-16 bg-white shadow-lg rounded-lg mt-8">
   <h1 className="text-3xl md:text-5xl font-bold font-serif text-center text-primary mb-8">
     Our Past Trips
   </h1>
