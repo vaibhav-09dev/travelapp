@@ -21,7 +21,7 @@ const Page = () => {
       return;
     }
     try {
-      await axios.post("https://travelapp-acje.vercel.app/api/Userdata", user).then((res) => {
+      await axios.post("https://travelapp-rux9.vercel.app/api/Userdata", user).then((res) => {
         alert("Request sent");
         setuser({
           Name: "",
