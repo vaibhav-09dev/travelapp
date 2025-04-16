@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Slider from "./Slider";
 
-const API_BASE_URL = "http://localhost:3000"; // Replace with your actual API base URL
+const API_BASE_URL = "https://travelapp-acje.vercel.app"; // Replace with your actual API base URL
 
 const Reviews = () => {
   const [review, setreview] = useState({
