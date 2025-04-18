@@ -42,7 +42,7 @@ const Reviews = () => {
 
   return (
     <div className="flex flex-col justify-center items-center bg-white h-auto w-full mb-8 p-6 md:p-12 rounded-lg shadow-lg">
-      {/* Title Section */}
+  
       <motion.h1
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-secondary mb-6 md:mb-8 text-center"
         initial={{ opacity: 0, y: -20 }}
