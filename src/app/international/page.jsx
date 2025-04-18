@@ -8,13 +8,13 @@ import Masonry from "../../components/ui/Masonry";
 const page = () => {
   const data = [
     { id: 1, image: "https://static.toiimg.com/thumb/msid-107700466,width-748,height-499,resizemode=4,imgsize-119838/.jpg", height: 700, text: "Singapore" },
-    { id: 2, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gnHjihqGG-HgmQw_tVwoYmIdL-oqDjRMSg&s", height: 700, text: "Dubai" },
+    { id: 2, image: "https://tii.imgix.net/production/articles/12772/e6e279c7-c6bb-415e-8d1f-0eee12e8a4b9-alDhkb.png?auto=compress&fit=crop&auto=format", height: 700, text: "Dubai" },
     { id: 3, image: "https://hips.hearstapps.com/hmg-prod/images/maldives-girls-holiday-1-66b5d876941be.jpg", height: 700, text: "Maldives" },
     { id: 4, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Hong_Kong_Island_Skyline_201108.jpg/1200px-Hong_Kong_Island_Skyline_201108.jpg", height: 700, text: "Hong Kong" },
     { id: 5, image: "https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg", height: 700, text: "Bali" },
     { id: 6, image: "https://static.independent.co.uk/2025/01/03/14/newFile-12.jpg", height: 700, text: "Bangkok" },
     { id: 7, image: "https://ik.imgkit.net/3vlqs5axxjf/external/http://images.ntmllc.com/v4/destination/Thailand/Phuket-City/220668_SCN_Phuket_iStock910551026_Z20B18.jpg?tr=w-1200%2Cfo-auto", height: 700, text: "Phuket" },
-    { id: 8, image: "https://www.lartisien.com/blog/wp-content/uploads/2023/04/The20Datai20Langkawi20-20The20Els20Club20Teluk20Datai20EM-1024x682.jpg", height: 700, text: "Langkawi" },
+    { id: 8, image: "https://finnsbeachclub.com/wp-content/uploads/2024/10/aerial-view-of-langkawi-eagle-square-from-the-fron-2024-05-23-05-11-43-utc-scaled.jpg", height: 700, text: "Langkawi" },
     { id: 9, image: "https://assets.atdw-online.com.au/images/082abec166a817adfae646daff53ad70.jpeg?rect=0%2C0%2C2048%2C1536&w=2048&h=1536&rot=360&q=eyJ0eXBlIjoibGlzdGluZyIsImxpc3RpbmdJZCI6IjU2YjIzYzkyZDVmMTU2NTA0NWQ4MTBkMiIsImRpc3RyaWJ1dG9ySWQiOiI1NmIxZWI5MzQ0ZmVjYTNkZjJlMzIwYzgiLCJhcGlrZXlJZCI6IjU2YjFlZTU5MGNmMjEzYWQyMGRjNTgxOSJ9", height: 700, text: "Sydney" },
     { id: 10, image: "https://lp-cms-production.imgix.net/2022-11/Malaysia-iStock-1344146598-RFE_1.jpeg", height: 700, text: "Kuala Lumpur" },
     { id: 11, image: "https://www.qantas.com/travelinsider/en/explore/asia/thailand/things-to-do-krabi/_jcr_content/verticalGalleryMain/gallery/galleryItems/50_1726567773236.img.1440.high.jpg/1726567790887.jpg", height: 700, text: "Krabi" },
