@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect, useMemo, useRef } from "react";
 import { useTransition, a } from "@react-spring/web";
-import { Dropdown, DropdownDivider, DropdownHeader, DropdownItem } from "flowbite-react";
-
+import { Popover } from "flowbite-react";
 
 function Masonry({ data }) {
   const [columns, setColumns] = useState(2);
@@ -71,7 +70,7 @@ function Masonry({ data }) {
         <a.div
           key={item.id}
           style={style}
-          className="absolute p-[20px] [will-change:transform,width,height,opacity]"
+          className="absolute p-[30px] md:py-8 [will-change:transform,width,height,opacity]"
         >
           <div
             className="relative w-full h-full overflow-hidden uppercase text-[10px] leading-[10px] rounded-[4px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] transition duration-300 ease hover:scale-110"
@@ -82,11 +81,45 @@ function Masonry({ data }) {
               backgroundPosition: "center",
             }}
           />
-         <div className=" flex  justify-center items-center ">
-         <h1 className="font-mono font-bold text-lg mt-2">{item.text}</h1>
-          {/* Show More Button */}
-         
-         </div>
+          <div className="flex flex-col gap-2.5 mt-4 justify-center items-center">
+            {/* Flex container for text and "Show More" */}
+            <div className="flex justify-center items-center gap-2">
+              <h1 className="font-mono font-bold text-lg">{item.text}</h1>
+              <Popover
+                placement="top"
+                trigger="hover"
+                content={
+                  <div className="w-60 text-sm text-gray-500 dark:border-gray-600 dark:bg-gray-800 flex justify-center items-center dark:text-gray-400">
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-lg dark:text-white mb-2">
+                        About {item.text}
+                      </h3>
+                      <div className="space-y-2">
+                        
+                          <div >
+                            <p className="text-gray-500 dark:text-gray-400">
+                              <span className="text-lg font-bold">{item.city1}</span>
+                            </p>
+                            <p className="text-gray-500 dark:text-gray-400">
+                              <span className="text-lg font-bold">{item.city1}</span>
+                            </p>
+                            
+                          </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                }
+              >
+                <a
+                  href="#"
+                  className="text-blue-600 underline hover:no-underline dark:text-blue-500"
+                >
+                  Show More
+                </a>
+              </Popover>
+            </div>
+          </div>
         </a.div>
       ))}
     </div>

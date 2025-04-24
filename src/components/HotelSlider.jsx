@@ -232,7 +232,7 @@ const HotelSlider = () => {
             </motion.button>
   
             {/* Slider Content */}
-            <div className="overflow-hidden mx-8 md:mx-16 lg:mx-24">
+            <div className="overflow-hidden mx-2 md:mx-16 lg:mx-24">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentPage}
@@ -240,7 +240,7 @@ const HotelSlider = () => {
                   initial="hidden"
                   animate="visible"
                   exit="exit"
-                  className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 "
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 "
                 >
                   {getCurrentPageItems().map((destination, index) => (
                     <motion.div
