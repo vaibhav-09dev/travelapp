@@ -51,7 +51,7 @@ const page = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="text-4xl md:text-6xl font-extrabold text-secondary text-center md:text-left">
-          4 Dham Yatra by Helicopter
+        CharDham Yatra by Helicopter
         </h1>
       </motion.div>
 
