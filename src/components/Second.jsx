@@ -16,7 +16,7 @@ const popularDestinations = [
    
   },
   {
-    name: "4-Dham ",
+    name: "CharDham ",
     location: "India",
     image: "https://www.shrineyatra.in/wp-content/uploads/2024/05/chardham-yatra-package.webp?height=400&width=600",
     
