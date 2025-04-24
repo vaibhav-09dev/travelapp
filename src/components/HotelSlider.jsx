@@ -103,8 +103,8 @@ const HotelSlider = () => {
     // Calculate items per page based on screen size
     const getItemsPerPage = () => {
       if (typeof window !== "undefined") {
-        if (window.innerWidth < 640) return 2 // Mobile
-        if (window.innerWidth < 1024) return 6 // Tablet
+        if (window.innerWidth < 640) return 1 // Mobile
+        if (window.innerWidth < 1024) return 3 // Tablet
         return 4 // Desktop
       }
       return 4 // Default
