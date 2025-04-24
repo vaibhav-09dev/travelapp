@@ -1,17 +1,19 @@
-"use client"
-import { useState, useEffect, useMemo, useRef } from 'react';
-import { useTransition, a } from '@react-spring/web';
+"use client";
+import { useState, useEffect, useMemo, useRef } from "react";
+import { useTransition, a } from "@react-spring/web";
+import { Dropdown, DropdownDivider, DropdownHeader, DropdownItem } from "flowbite-react";
+
 
 function Masonry({ data }) {
   const [columns, setColumns] = useState(2);
 
   useEffect(() => {
     const updateColumns = () => {
-      if (window.matchMedia('(min-width: 1500px)').matches) {
+      if (window.matchMedia("(min-width: 1500px)").matches) {
         setColumns(5);
-      } else if (window.matchMedia('(min-width: 1000px)').matches) {
+      } else if (window.matchMedia("(min-width: 1000px)").matches) {
         setColumns(4);
-      } else if (window.matchMedia('(min-width: 600px)').matches) {
+      } else if (window.matchMedia("(min-width: 600px)").matches) {
         setColumns(3);
       } else {
         setColumns(1); // Mobile devices
@@ -19,8 +21,8 @@ function Masonry({ data }) {
     };
 
     updateColumns();
-    window.addEventListener('resize', updateColumns);
-    return () => window.removeEventListener('resize', updateColumns);
+    window.addEventListener("resize", updateColumns);
+    return () => window.removeEventListener("resize", updateColumns);
   }, []);
 
   const ref = useRef();
@@ -34,8 +36,8 @@ function Masonry({ data }) {
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const [heights, gridItems] = useMemo(() => {
@@ -74,17 +76,19 @@ function Masonry({ data }) {
           <div
             className="relative w-full h-full overflow-hidden uppercase text-[10px] leading-[10px] rounded-[4px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] transition duration-300 ease hover:scale-110"
             style={{
-              backgroundColor: '#ffffff',
+              backgroundColor: "#ffffff",
               backgroundImage: `url(${item.image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
-          /> 
-          <h1 className='font-mono font-bold text-lg  mt-2'>{item.text} </h1>
+          />
+         <div className=" flex  justify-center items-center ">
+         <h1 className="font-mono font-bold text-lg mt-2">{item.text}</h1>
+          {/* Show More Button */}
+         
+         </div>
         </a.div>
-        
       ))}
-      
     </div>
   );
 }

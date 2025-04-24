@@ -1,4 +1,5 @@
 "use client";
+import HotelSlider from "./HotelSlider";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Slider from "./Slider";
@@ -41,8 +42,13 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center bg-white h-auto w-full mb-8 p-6 md:p-12 rounded-lg shadow-lg">
-  
+    <div className="flex flex-col justify-center items-center  h-auto w-full mb-8 p-6 md:p-12 rounded-lg shadow-lg">
+ 
+
+      <div className="mb-8 bg-gray-200  ">
+      <HotelSlider />
+      </div>
+   
       <motion.h1
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-secondary mb-6 md:mb-8 text-center"
         initial={{ opacity: 0, y: -20 }}

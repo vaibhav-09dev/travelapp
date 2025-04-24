@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import cruise from "../../../public/cruise.webp";
-import a1 from "../../../public/a1.jpg";
-import a2 from "../../../public/a2.png";
-import a3 from "../../../public/a3.jpg";
-import a4 from "../../../public/a4.jpg";
+
 
 const page = () => {
   return (
@@ -158,48 +155,7 @@ const page = () => {
       </div>
 
       {/* Associations Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-gray-100 to-gray-200">
-        <div className="container mx-auto text-center">
-          <motion.h2
-            className="text-3xl md:text-5xl font-bold font-serif text-primary mb-6"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            Our Association
-          </motion.h2>
-          <motion.p
-            className="text-lg md:text-xl text-muted leading-relaxed max-w-3xl mx-auto mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2 }}
-          >
-            Wellcome Tours is a paradigm of convenient and secured travel for
-            all. It is your one-stop destination to find the best and exotic
-            domestic or international travel deals.
-          </motion.p>
-          <div className="flex flex-wrap justify-center gap-8">
-            {[a1, a2, a3, a4].map((image, index) => (
-              <motion.div
-                key={index}
-                className="w-50 h-40 flex items-center justify-center bg-white shadow-lg rounded-lg p-4"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.2, delay: index * 0.1 }}
-                whileHover={{ scale: 1.3}}
-              >
-                <Image
-                  src={image}
-                  alt={`Partner ${index + 1}`}
-                  width={120}
-                  height={80}
-                  className="max-w-full max-h-full"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
     </div>
   );
 };

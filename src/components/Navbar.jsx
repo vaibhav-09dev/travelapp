@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="flex md:justify-between justify-around items-center h-[80px] px-4 md:px-8">
         {/* Logo Section */}
         <motion.div
-          className="h-[80px] w-[200px] flex justify-center items-center"
+          className="h-[80px] w-[200px] flex justify-center items-start"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
@@ -33,7 +33,7 @@ const Navbar = () => {
           >
           <Image
             src={logo}
-            width={80}
+            width={100}
             alt="logo"
             className="rounded-full py-1"
           />

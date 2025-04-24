@@ -14,7 +14,7 @@ const Pdf = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-bold text-lg md:text-xl font-serif text-stone-700">
         <div className="text-center">
           Char Dham by Helicopter <br />
-          (4-days Tour) <br />
+          (6-days Tour) <br />
           <br />
           <Link
             href="https://drive.google.com/file/d/1qTAJvM2ydQrdbcb2xus6GEl527eXRGqS/view?usp=drive_link"

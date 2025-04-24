@@ -10,45 +10,46 @@ const popularDestinations = [
     name: "Switzerland",
     location: "Switzerland",
     image: "https://static.toiimg.com/photo/msid-106092213,width-96,height-65.cms?height=400&width=600",
+    link:"/destinations"
     
-    duration: "7 Days / 6 Nights",
-    price: 1299,
+   
+   
   },
   {
     name: "4-Dham ",
     location: "India",
     image: "https://www.shrineyatra.in/wp-content/uploads/2024/05/chardham-yatra-package.webp?height=400&width=600",
-    duration: "8 Days / 7 Nights",
-    price: 1699,
+    
+    link:"/dham"
   },
   {
     name: "Bali, Indonesia",
     location: "Indonesia",
     image: "https://cdn.audleytravel.com/2478/1770/79/16027396-pura-ulun-danu-bratan-bali.jpg?height=400&width=600",
-    duration: "10 Days / 9 Nights",
-    price: 1499,
+    
+    link:"/destinations"
   },
   {
     name: "Maldives",
     location: "Maldives",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReR9Uns1_rIDNosFY9z7YaB9lGyzOpfd8MXQ&s?height=400&width=600",
-    duration: "5 Days / 4 Nights",
-    price: 1899,
+    
+    link:"/destinations"
   },
   {
     name: "Paris, France",
     location: "France",
     image: "https://img.static-af.com/transform/45cb9a13-b167-4842-8ea8-05d0cc7a4d04/?height=400&width=600",
-    duration: "6 Days / 5 Nights",
-    price: 1199,
+    
+    link:"/destinations"
   },
   
   {
     name: "New York, USA",
     location: "United States",
     image: "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg?height=400&width=600",
-    duration: "5 Days / 4 Nights",
-    price: 1299,
+   
+    link:"/destinations"
   },
 ];
 
@@ -87,7 +88,7 @@ const Second = () => {
   };
 
   return (
-    <section className="container md:py-16 py-10 md:mb-8 bg-white " ref={ref}>
+    <section className="container md:py-16 py-10 w-full md:px-2.5 px-1 md:mb-8 bg-white " ref={ref}>
       {/* Title Section */}
       <motion.div
         className="flex flex-col items-center text-center mb-12"
@@ -121,7 +122,9 @@ const Second = () => {
             variants={itemVariants}
             whileHover={{ y: -10, transition: { duration: 0.3 } }}
           >
-            <Link href={"/destinations"}>
+            
+          
+            <Link href={destination.link}>
             <div className="relative h-64 w-full overflow-hidden">
               
               <motion.img

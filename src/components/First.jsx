@@ -20,6 +20,8 @@ const First = () => {
   };
 
   return (
+    
+    
     <ImagesSlider className="h-[30rem] md:h-[45rem] lg:h-[50rem]" images={images}>
       <motion.div
         initial={{

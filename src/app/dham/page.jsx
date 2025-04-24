@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import dham from "../../../public/dham.jpg";
 import Masonry from "../../components/ui/Masonry";
 import Pdf from "@/components/Pdf";
@@ -16,7 +17,12 @@ const page = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="relative h-[40vh] md:h-[50vh] ">
+      <motion.section
+        className="relative h-[40vh] md:h-[50vh]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="absolute inset-0 bg-black">
           <Image
             src={dham}
@@ -25,17 +31,37 @@ const page = () => {
             className="object-cover opacity-80"
           />
         </div>
-      </section>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <motion.h1
+            className="text-4xl md:text-6xl font-extrabold text-white text-center"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2 }}
+          >
+            CharDham Yatra by Helicopter
+          </motion.h1>
+        </div>
+      </motion.section>
 
       {/* Title Section */}
-      <div className="py-8 px-4 md:px-12">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-secondary  text-center md:text-left">
-          4 Dham Yatra
+      <motion.div
+        className="py-8 px-4 md:px-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-4xl md:text-6xl font-extrabold text-secondary text-center md:text-left">
+          4 Dham Yatra by Helicopter
         </h1>
-      </div>
+      </motion.div>
 
       {/* Content Section */}
-      <div className="py-8 px-4 md:px-12 flex flex-col md:flex-row items-center">
+      <motion.div
+        className="py-8 px-4 md:px-12 flex flex-col md:flex-row items-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="w-full md:w-1/2">
           <h1 className="text-3xl md:text-5xl font-bold font-serif text-black mb-4">
             Enjoy your Spiritual Journey with us
@@ -45,25 +71,36 @@ const page = () => {
           </p>
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-          <video
+          <motion.video
             src="https://media.istockphoto.com/id/1276621567/video/uttarkashi-uttarakhand-india-october-2018-pilgrims-outside-gangotri-temple-located-on-the.mp4?s=mp4-480x480-is&k=20&c=sk9Yw6US3k5a92EozDc9nfBDp9W46tAQ92aBR-gEhS8="
             autoPlay
             loop
             muted
-            className="rounded-2xl w-full md:w-[500px] h-auto"
+            className="rounded-2xl w-full md:w-[500px] h-auto shadow-lg"
+            whileHover={{ scale: 1.05 }}
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* PDF Section */}
-      <div className="py-8 px-4 md:px-12">
+      <motion.div
+        className="py-8 px-4 md:px-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <Pdf />
-      </div>
+      </motion.div>
 
       {/* Masonry Section */}
-      <div className="py-8 px-4 md:px-12">
+      <motion.div
+        className="py-8 px-4 md:px-12 flex justify-center items-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <Masonry data={data} />
-      </div>
+      </motion.div>
     </div>
   );
 };
