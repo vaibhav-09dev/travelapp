@@ -92,9 +92,9 @@ function Masonry({ data }) {
       </DropdownHeader>
       <DropdownItem>Day 1:{item.city1}</DropdownItem>
       <DropdownItem>Day 2:{item.city2}</DropdownItem>
-      <DropdownItem>Day 3:{item.city1}</DropdownItem>
-      <DropdownItem>Day 4:{item.city1}</DropdownItem>
-      <DropdownItem>Day 5:{item.city1}</DropdownItem>
+      <DropdownItem>Day 3:{item.city3}</DropdownItem>
+      <DropdownItem>Day 4:{item.city4}</DropdownItem>
+      <DropdownItem>Day 5:{item.city5}</DropdownItem>
       
     </Dropdown>
             </div>
