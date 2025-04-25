@@ -62,8 +62,41 @@ export default function Footer() {
                 </svg>
               </a>
               <p  className='font-bold ml-2'>Instagram</p>
-              <a href="https://www.google.com/maps/place/Wellcome+Tours+New+Delhi/@28.631675,76.903198,11z/data=!4m8!3m7!1s0x390ce1a34b1a9bdd:0x41be6932b57c1ee2!8m2!3d28.5339929!4d77.2453219!9m1!1b1!16s%2Fg%2F11fhs7_1z_?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" className='font-bold ml-2'>Google Reviews</a>
-            </div>
+              <a href="https://www.facebook.com/share/1Ejds8yWdJ/" className="text-white hover:text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+              </a>
+              <p  className='font-bold '>Facebook</p>
+              </div> <br />
+              <a
+  href="https://www.google.com/maps/place/Wellcome+Tours+New+Delhi/@28.631675,76.903198,11z/data=!4m8!3m7!1s0x390ce1a34b1a9bdd:0x41be6932b57c1ee2!8m2!3d28.5339929!4d77.2453219!9m1!1b1!16s%2Fg%2F11fhs7_1z_?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
+  className="flex items-center font-bold ml-2 text-white hover:text-primary"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-12 w-8 mr-2"
+    viewBox="0 0 48 48"
+  >
+    <path
+      fill="#EA4335"
+      d="M24 9.5c3.1 0 5.9 1.1 8.1 3.2l6-6C34.2 3.3 29.4 1.5 24 1.5 14.8 1.5 7.1 7.4 3.9 15.1l7.3 5.7C13.1 14.1 18.1 9.5 24 9.5z"
+    />
+    <path
+      fill="#34A853"
+      d="M24 46.5c6.1 0 11.3-2.1 15.1-5.7l-7.3-5.7c-2.1 1.4-4.9 2.3-7.8 2.3-5.9 0-10.9-4.6-11.8-10.5H3.9v6.6C7.1 40.6 14.8 46.5 24 46.5z"
+    />
+    <path
+      fill="#FBBC05"
+      d="M46.1 24.5c0-1.6-.2-3.2-.5-4.7H24v9.4h12.5c-.5 2.6-2 4.8-4.2 6.3l7.3 5.7c4.2-3.9 6.5-9.6 6.5-16.7z"
+    />
+    <path
+      fill="#4285F4"
+      d="M24 9.5c3.1 0 5.9 1.1 8.1 3.2l6-6C34.2 3.3 29.4 1.5 24 1.5 14.8 1.5 7.1 7.4 3.9 15.1l7.3 5.7C13.1 14.1 18.1 9.5 24 9.5z"
+    />
+  </svg>
+  Google Reviews
+</a>            
           </div>
 
           </div>

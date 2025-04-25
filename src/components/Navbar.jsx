@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import logo from "../../public/logo.jpg";
+import logo from "../../public/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
