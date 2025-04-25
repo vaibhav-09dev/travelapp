@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import dham from "../../../public/dham.jpg";
-import Masonry from "../../components/ui/Masonry";
+import Masonry1 from "../../components/ui/Masonry1";
 import Pdf from "@/components/Pdf";
 
 const page = () => {
@@ -99,7 +99,7 @@ const page = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <Masonry data={data} />
+        <Masonry1 data={data} />
       </motion.div>
     </div>
   );

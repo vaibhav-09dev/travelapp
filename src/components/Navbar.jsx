@@ -19,7 +19,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="flex md:justify-between justify-around items-center h-[80px] px-4 md:px-8">
+      <div className="flex md:justify-between justify-between items-center h-[80px] px-4 md:px-8">
         {/* Logo Section */}
         <motion.div
           className="h-[80px] w-[200px] flex justify-center items-start"
@@ -87,7 +87,7 @@ const Navbar = () => {
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
             href={"/dham"}
           >
-            4-DHAAM
+            CHARDHAAM
           </Link>
           <Link
             className="hover:text-yellow-500 ml-6 transition-all duration-300 hover:scale-110"
@@ -159,7 +159,7 @@ const Navbar = () => {
               href={"/dham"}
               onClick={() => setIsOpen(false)}
             >
-              4-Dhaam
+              CharDhaam
             </Link>
             <Link
               className="hover:text-yellow-500 py-2 text-lg text-gray-800 transition-all duration-300"
@@ -181,7 +181,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon */}
         <motion.div
-          className="md:hidden flex items-center cursor-pointer"
+          className="md:hidden flex mr-3 items-center cursor-pointer"
           onClick={toggleMenu}
           whileHover={{ scale: 1.1 }}
         >

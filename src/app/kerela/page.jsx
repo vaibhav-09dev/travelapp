@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import kerela from "../../../public/kerela.jpg";
-import Masonry from "../../components/ui/Masonry";
+import Masonry1 from "../../components/ui/Masonry1";
 
 const page = () => {
   const data = [
@@ -42,7 +42,7 @@ const page = () => {
 
       {/* Masonry Section */}
       <div className="py-8 px-4 md:px-12">
-        <Masonry data={data} />
+        <Masonry1 data={data} />
       </div>
     </div>
   );

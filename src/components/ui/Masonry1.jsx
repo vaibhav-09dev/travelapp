@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { useTransition, a } from "@react-spring/web";
 import { Dropdown, DropdownDivider, DropdownHeader, DropdownItem } from "flowbite-react";
 
-function Masonry({ data }) {
+function Masonry1({ data }) {
   const [columns, setColumns] = useState(2);
 
   useEffect(() => {
@@ -85,18 +85,7 @@ function Masonry({ data }) {
             {/* Flex container for text and "Show More" */}
             <div className="flex justify-center items-center gap-2">
               <h1 className="font-mono font-bold text-lg">{item.text}</h1>
-              <Dropdown label="Explore" inline placement="top">
-      <DropdownHeader>
-        
-        <span className="block truncate text-lg font-bold ">About {item.text}</span>
-      </DropdownHeader>
-      <DropdownItem>Day 1:{item.city1}</DropdownItem>
-      <DropdownItem>Day 2:{item.city2}</DropdownItem>
-      <DropdownItem>Day 3:{item.city1}</DropdownItem>
-      <DropdownItem>Day 4:{item.city1}</DropdownItem>
-      <DropdownItem>Day 5:{item.city1}</DropdownItem>
-      
-    </Dropdown>
+             
             </div>
           </div>
         </a.div>
@@ -105,4 +94,4 @@ function Masonry({ data }) {
   );
 }
 
-export default Masonry;
+export default Masonry1;
