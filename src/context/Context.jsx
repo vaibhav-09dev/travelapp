@@ -9,7 +9,7 @@ const Context = () => {
     
     const fetchall=async()=>{
         try {
-            const res=await axios.get('https://travelapp-acje.vercel.app/api/All')
+            const res=await axios.get('https://travelapp-seven-delta.vercel.app/api/All')
             setusers(res.data.alluser)
             
             
