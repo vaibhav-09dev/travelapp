@@ -12,7 +12,7 @@ const page = () => {
     const submit=async(e)=>{
         e.preventDefault();
         try {
-            await axios.post("https://travelapp-seven-delta.vercel.app//api/Auth",admin).then((res)=>{
+            await axios.post("https://www.wellcometours.com/api/Auth",admin).then((res)=>{
                 router.push("/panel")
 
             })

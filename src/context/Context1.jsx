@@ -9,7 +9,7 @@ const Context = () => {
     
     const fetchall=async()=>{
         try {
-            const res=await axios.get('https://travelapp-seven-delta.vercel.app/api/Allreview')
+            const res=await axios.get('https://www.wellcometours.com/api/Allreview')
             setreview(res.data.alluser)
             
             

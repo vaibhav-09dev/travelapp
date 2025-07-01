@@ -27,7 +27,7 @@ const allDestinations = [
   {
     name: "4-dham Yatra",
     country: "India",
-    image: "https://nextjs.shrineyatra.com/wp-content/uploads/2021/07/Char-Dham-Yatra.jpg?height=300&width=400",
+    image: "https://bloominghimalaya.com/wp-content/uploads/2025/05/chardham.jpeg?height=300&width=400",
     category: "Cultural",
   },
   {
