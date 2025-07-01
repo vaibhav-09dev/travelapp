@@ -10,7 +10,7 @@ export async function POST(req){
     const reqbody=await req.json();
     const {email,password}=reqbody;
     try {
-        if(email=="vaibhav@gmail.com" && password=="vaibhav"){
+        if(email=="Ankur@wellcometours.com" && password=="Ankur@9811"){
             return NextResponse.json({message:"login sucessfull",success:true});
             
             
