@@ -6,7 +6,7 @@ import axios from 'axios';
 const Users = ({ users = [] }) => {
   const handeldelete = async (id) => {
     try {
-      await axios.delete(`https://travelapp-acje.vercel.app/api/Delete?id=${id}`).then((res) => {
+      await axios.delete(`https://travelapp-seven-delta.vercel.app/api/Delete?id=${id}`).then((res) => {
         alert("Request Deleted Successfully");
         window.location.reload();
         // Update the state to remove the deleted user
